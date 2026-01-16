@@ -4,8 +4,7 @@ import { NextResponse } from "next/server";
 export async function POST(req: Request) {
   try {
     // API 키 확인
-    const apiKey =
-      process.env.GEMINI_API_KEY || process.env.NEXT_PUBLIC_GEMINI_API_KEY;
+    const apiKey = process.env.GEMINI_API_KEY;
     
     if (!apiKey) {
       console.error("Gemini API 키가 설정되지 않았습니다.");
