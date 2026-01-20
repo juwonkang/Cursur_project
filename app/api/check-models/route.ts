@@ -48,7 +48,7 @@ export async function GET() {
     });
   } catch (error: any) {
     return NextResponse.json(
-      { error: error.message || "모델 확인 중 오류 발생" },
+      { error: error.message || "모델 확인 중 오류 발생" }, //commit
       { status: 500 }
     );
   }
